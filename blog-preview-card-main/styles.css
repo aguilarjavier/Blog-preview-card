@@ -1,0 +1,50 @@
+
+
+@font-face {
+    font-family: test;
+    src: url(assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+body{
+    font-family: test;
+    background-color: #F4D04E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card{
+    background-color: white;
+    width: 384px;
+    height: 522px;
+    border-radius: 20px;
+    border: 1px black solid;
+    box-sizing: border-box;
+    padding: 24px;
+    box-shadow: 8px 8px;
+}
+
+.image{
+    border-radius: 10px;
+}
+
+.tag{
+    padding: 4px 12px 4px 12px;
+    margin-top: 20px;
+    background-color: #F4D04E;
+    width: fit-content;
+    border-radius: 4px;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+}
+
+.image-avatar{
+    width: 32px;
+    height: auto;
+    float: left;
+    margin-right: 12px;
+}
