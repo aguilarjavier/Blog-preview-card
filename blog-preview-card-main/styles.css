@@ -1,4 +1,11 @@
 
+:root {
+    --yellow: #F4D04E;
+    --black: #111111;
+    ---gray: #6B6B6B;
+}
+
+
 
 @font-face {
     font-family: test;
@@ -6,12 +13,18 @@
 }
 
 body{
+    color: var(--black);
     font-family: test;
-    background-color: #F4D04E;
+    background-color: var(--yellow);
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+}
+
+
+p{
+    color: var(---gray);
 }
 
 .card{
@@ -19,10 +32,10 @@ body{
     width: 384px;
     height: 522px;
     border-radius: 20px;
-    border: 1px black solid;
+    border: 1px var(--black) solid;
     box-sizing: border-box;
     padding: 24px;
-    box-shadow: 8px 8px;
+    box-shadow: 8px 8px var(--black);
 }
 
 .image{
@@ -32,14 +45,19 @@ body{
 .tag{
     padding: 4px 12px 4px 12px;
     margin-top: 20px;
-    background-color: #F4D04E;
+    background-color: var(--yellow);
     width: fit-content;
     border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: -1px;
 }
 
 .profile{
     display: flex;
     align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--black);
 }
 
 .image-avatar{
@@ -47,4 +65,15 @@ body{
     height: auto;
     float: left;
     margin-right: 12px;
+}
+
+.profile p, .date {
+    color: var(--black);
+}
+
+
+
+h2:hover{
+    color: var(--yellow);
+    cursor: pointer;
 }
